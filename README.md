@@ -1,2 +1,2 @@
 # wordle-solver
-I suck at wordle, so I made a bot to solve the challenges for me :)
+I always lose at wordle, so I made a bot to beat the challenges for me :)
