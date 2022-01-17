@@ -1,7 +1,7 @@
 import random
 
 
-with open("wordle-words.txt") as f:
+with open("word-frequencies.txt") as f:
   wDict = f.read().splitlines() 
 
 wDict = [word.split(",")[0] for word in wDict]
