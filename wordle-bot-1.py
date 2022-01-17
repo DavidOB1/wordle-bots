@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 ## pip install selenium
 
-with open("wordle-words.txt") as f:
+with open("word-frequencies.txt") as f:
   wDict = f.read().splitlines() 
 
 
