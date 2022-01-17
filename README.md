@@ -1,6 +1,6 @@
 # Wordle Bot
 
-A Selenium Python bot that solves the game Wordle
+A Selenium Python bot that solves the game Wordle.
 It completes the game about 95% of the time, but it does occasioanlly fail.
 It first uses the given text file, which has words sorted by their usage.
 It sorts through the file, and then throughout the game it makes logical deductions
@@ -11,7 +11,7 @@ used, although you can really start with any word you'd like.
 
 # Manual Solver
 
-!!If you try to use this, make sure wordle-words.txt is in the same directory as the file!!
+If you try to use this, make sure wordle-words.txt is in the same directory as the file.
 I used this a lot for testing the logic before I actually implemented selenium.
 This can be a useful tool for testing the best strategies.
 
