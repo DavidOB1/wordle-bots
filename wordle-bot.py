@@ -3,6 +3,8 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.ui import WebDriverWait
 
 ## pip install selenium
 
@@ -13,9 +15,11 @@ with open("wordle-words.txt") as f:
 wDict = [word.split(",")[0] for word in wDict]
 wDict = [word for word in wDict if len(word) == 5]
 
+
 driver = webdriver.Chrome()
 driver.get("https://www.powerlanguage.co.uk/wordle")
-driver.implicitly_wait(30)
+wait = WebDriverWait(driver, 10)
+wait.until(expected_conditions.title_is("Wordle - A daily word game"))
 time.sleep(0.5)
 page = driver.find_element(By.TAG_NAME, "html")
 page.click()
