@@ -19,6 +19,17 @@ This can be a useful tool for testing the best strategies.
 
 This just gets the answer automatically by finding it in the source code.
 It's not very fun, but at least you will never lose :)
+Make sure you run it with the chromedriver in the same directory.
+
+# Smart Solver
+
+This uses a unique strategy of guessing 4 strategic words in order to make
+enough deductions to guess the correct word basically every time. This bot is more accurate
+than the other one I made, but it will always take at least 5 tries to guess it.
+Make sure to run it with the chromedriver and "wordle-words.txt" in the same directory.
+
+
+If you use any of the alternative solvers, you should probably drag them into the main directory and then run them.
 
 Note: wordle-words.txt does not contain exclusively words for wordle, it has 1/3 of a million words
 sorted by their frequencies. This can be useful for other projects.
