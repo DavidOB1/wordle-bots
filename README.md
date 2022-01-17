@@ -29,6 +29,9 @@ than the other one I made, but it will always take at least 5 tries to guess it.
 Make sure to run it with the chromedriver and "wordle-words.txt" in the same directory.
 
 
+
+
+
 If you use any of the alternative solvers, you should probably drag them into the main directory and then run them.
 
 Note: wordle-words.txt does not contain exclusively words for wordle, it has 1/3 of a million words
