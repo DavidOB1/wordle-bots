@@ -19,7 +19,7 @@ wDict = [word for word in wDict if len(word) == 5]
 driver = webdriver.Chrome()
 driver.get("https://www.powerlanguage.co.uk/wordle")
 wait = WebDriverWait(driver, 10)
-wait.until(expected_conditions.title_is("Wordle - A daily word game"))
+wait.until(expected_conditions.title_contains("Wordle"))
 time.sleep(0.5)
 page = driver.find_element(By.TAG_NAME, "html")
 page.click()
@@ -33,7 +33,7 @@ def enter_word(word):
 
 def get_data():
   local_data = driver.execute_script("return window.localStorage;")
-  game_info = local_data["gameState"]
+  game_info = local_data["nyt-wordle-state"]
   evals = json.loads(game_info)["evaluations"]
   return evals
 
