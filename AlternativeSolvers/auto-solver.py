@@ -16,7 +16,7 @@ page.click()
 
 
 local_data = driver.execute_script("return window.localStorage;")
-game_info = local_data["gameState"]
+game_info = local_data["nyt-wordle-state"]
 answer = json.loads(game_info)["solution"]
 
 
