@@ -13,6 +13,10 @@ find the answer (also from the word frequencies list). I've found that this bot 
 accurate than the first bot, but it will always take at least 5 tries to get the answer, whereas 
 the first bot can sometimes find the answer in 3 or 4 tries.
 
+Make sure the included chromedriver works with your installed version of Google Chrome. If not, then
+make sure to download the driver based on your Google Chrome version at this website: 
+https://chromedriver.storage.googleapis.com/index.html
+
 # Alternative Solvers
 
 If you use any of these, make sure to drag them into the main directory.
@@ -25,6 +29,5 @@ Auto Solver:
 This just gets the answer automatically by finding it in the source code.
 It's not very fun, but at least you will never lose :)
 
-#
-
-Credits to this website for the word frequency data: https://www.kaggle.com/rtatman/english-word-frequency
+# Credits
+Word Frequency Data: https://www.kaggle.com/rtatman/english-word-frequency
